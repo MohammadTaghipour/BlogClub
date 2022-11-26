@@ -7,10 +7,10 @@ class StoryData {
 
   StoryData(
       {required this.id,
-      required this.name,
-      required this.imageFileName,
-      required this.iconFileName,
-      required this.isViewed});
+        required this.name,
+        required this.imageFileName,
+        required this.iconFileName,
+        required this.isViewed});
 }
 
 class Category {
@@ -33,12 +33,12 @@ class PostData {
 
   PostData(
       {required this.id,
-      required this.caption,
-      required this.title,
-      required this.likes,
-      required this.time,
-      required this.isBookmarked,
-      required this.imageFileName});
+        required this.caption,
+        required this.title,
+        required this.likes,
+        required this.time,
+        required this.isBookmarked,
+        required this.imageFileName});
 }
 
 class AppDatabase {
