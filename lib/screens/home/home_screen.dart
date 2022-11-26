@@ -1,4 +1,5 @@
-import 'package:blogclub/screens/home/views/StoryListView.dart';
+import 'package:blogclub/screens/home/views/category_slider.dart';
+import 'package:blogclub/screens/home/views/story_list_view.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -40,10 +41,9 @@ class HomeScreen extends StatelessWidget {
               child:
                   Text("Explore Today's", style: themeData.textTheme.headline4),
             ),
-            const Padding(
-              padding: EdgeInsets.only(bottom: 24),
-              child: StoryListView(),
-            )
+            const StoryListView(),
+            const SizedBox(height: 16),
+            const CategorySlider()
           ],
         ),
       )),

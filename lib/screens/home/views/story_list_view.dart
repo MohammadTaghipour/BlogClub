@@ -1,7 +1,7 @@
 import 'package:blogclub/data.dart';
 import 'package:flutter/material.dart';
 
-import 'StoryItem.dart';
+import 'story_item.dart';
 
 class StoryListView extends StatelessWidget {
   const StoryListView({
