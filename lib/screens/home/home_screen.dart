@@ -1,4 +1,5 @@
 import 'package:blogclub/screens/home/views/category_slider.dart';
+import 'package:blogclub/screens/home/views/posts_list.dart';
 import 'package:blogclub/screens/home/views/story_list_view.dart';
 import 'package:flutter/material.dart';
 
@@ -11,6 +12,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
           child: SingleChildScrollView(
+            physics: const BouncingScrollPhysics(),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -24,10 +26,6 @@ class HomeScreen extends StatelessWidget {
                     "Hi, Mohammad!",
                     style: themeData.textTheme.subtitle1,
                   ),
-                  // Image.asset(
-                  //   "assets/img/icons/blogclub_logo.png",
-                  //   height: 32,
-                  // ),
                   Image.asset(
                     "assets/img/icons/notification.png",
                     width: 32,
@@ -43,7 +41,8 @@ class HomeScreen extends StatelessWidget {
             ),
             const StoryListView(),
             const SizedBox(height: 16),
-            const CategorySlider()
+            const CategorySlider(),
+            const PostsList(),
           ],
         ),
       )),
