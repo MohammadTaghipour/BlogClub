@@ -30,7 +30,7 @@ class CategorySlider extends StatelessWidget {
           aspectRatio: 1.2,
           initialPage: 0,
           enableInfiniteScroll: false,
-          autoPlay: true,
+          autoPlay: false,
           autoPlayAnimationDuration: const Duration(seconds: 2),
           enlargeStrategy: CenterPageEnlargeStrategy.height,
           disableCenter: true,

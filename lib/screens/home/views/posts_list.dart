@@ -41,7 +41,6 @@ class PostsList extends StatelessWidget {
             return PostItem(post: post);
           },
         ),
-        const SizedBox(height: 16)
       ],
     );
   }

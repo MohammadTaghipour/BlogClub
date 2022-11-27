@@ -1,7 +1,14 @@
 import 'package:blogclub/screens/home/home_screen.dart';
+import 'package:blogclub/screens/main/bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+      statusBarColor: Colors.white,
+      statusBarIconBrightness: Brightness.dark,
+      systemNavigationBarColor: Colors.white,
+      systemNavigationBarIconBrightness: Brightness.dark));
   runApp(const MyApp());
 }
 
@@ -48,7 +55,12 @@ class MyApp extends StatelessWidget {
                   fontFamily: defaultFontFamily,
                   fontSize: 24,
                   color: primaryTextColor,
-                  fontWeight: FontWeight.w700)),
+                  fontWeight: FontWeight.w700),
+              caption: TextStyle(
+                  fontFamily: defaultFontFamily,
+                  fontWeight: FontWeight.w700,
+                  color: Color(0xff7B8BB2),
+                  fontSize: 10)),
           textButtonTheme: TextButtonThemeData(
               style: ButtonStyle(
                   textStyle: MaterialStateProperty.all(const TextStyle(
@@ -56,7 +68,17 @@ class MyApp extends StatelessWidget {
                       color: primaryColor,
                       fontWeight: FontWeight.w400,
                       fontFamily: defaultFontFamily))))),
-      home: const HomeScreen(),
+      home: Stack(
+        children: const [
+          Positioned.fill(child: HomeScreen()),
+          Positioned(
+            bottom: 0,
+            left: 0,
+            right: 0,
+            child: MyBottomNavigationBar(),
+          )
+        ],
+      ),
     );
   }
 }

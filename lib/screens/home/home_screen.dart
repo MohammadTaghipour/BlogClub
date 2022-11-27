@@ -12,7 +12,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
           child: SingleChildScrollView(
-            physics: const BouncingScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -43,6 +43,7 @@ class HomeScreen extends StatelessWidget {
             const SizedBox(height: 16),
             const CategorySlider(),
             const PostsList(),
+            const SizedBox(height: 95)
           ],
         ),
       )),
