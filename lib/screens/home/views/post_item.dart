@@ -1,4 +1,5 @@
 import 'package:blogclub/data.dart';
+import 'package:blogclub/gen/fonts.gen.dart';
 import 'package:blogclub/main.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -43,7 +44,7 @@ class PostItem extends StatelessWidget {
                   Text(
                     post.caption,
                     style: const TextStyle(
-                        fontFamily: MyApp.defaultFontFamily,
+                        fontFamily: FontFamily.avenir,
                         fontSize: 14,
                         color: Color(0xff376AED),
                         fontWeight: FontWeight.w700),

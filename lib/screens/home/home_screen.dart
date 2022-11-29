@@ -1,3 +1,4 @@
+import 'package:blogclub/gen/assets.gen.dart';
 import 'package:blogclub/screens/home/views/category_slider.dart';
 import 'package:blogclub/screens/home/views/posts_list.dart';
 import 'package:blogclub/screens/home/views/story_list_view.dart';
@@ -26,11 +27,7 @@ class HomeScreen extends StatelessWidget {
                     "Hi, Mohammad!",
                     style: themeData.textTheme.subtitle1,
                   ),
-                  Image.asset(
-                    "assets/img/icons/notification.png",
-                    width: 32,
-                    height: 32,
-                  )
+                  Assets.img.icons.notification.image(width: 32,height: 32)
                 ],
               ),
             ),

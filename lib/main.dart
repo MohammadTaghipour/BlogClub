@@ -1,3 +1,5 @@
+import 'package:blogclub/gen/assets.gen.dart';
+import 'package:blogclub/gen/fonts.gen.dart';
 import 'package:blogclub/screens/home/home_screen.dart';
 import 'package:blogclub/screens/main/bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
@@ -13,8 +15,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  static const defaultFontFamily = "Avenir";
-
   const MyApp({super.key});
 
   @override
@@ -28,36 +28,36 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
           textTheme: const TextTheme(
               subtitle1: TextStyle(
-                  fontFamily: defaultFontFamily,
+                  fontFamily: FontFamily.avenir,
                   color: secondaryTextColor,
                   fontSize: 18,
                   fontWeight: FontWeight.w200),
               subtitle2: TextStyle(
-                  fontFamily: defaultFontFamily,
+                  fontFamily: FontFamily.avenir,
                   color: primaryTextColor,
                   fontSize: 14,
                   fontWeight: FontWeight.w400),
               headline6: TextStyle(
-                  fontFamily: defaultFontFamily,
+                  fontFamily: FontFamily.avenir,
                   fontWeight: FontWeight.bold,
                   fontSize: 18,
                   color: primaryTextColor),
               headline5: TextStyle(
-                  fontFamily: defaultFontFamily,
+                  fontFamily: FontFamily.avenir,
                   color: primaryTextColor,
                   fontWeight: FontWeight.w700,
                   fontSize: 20),
               bodyText2: TextStyle(
-                  fontFamily: defaultFontFamily,
+                  fontFamily: FontFamily.avenir,
                   color: secondaryTextColor,
                   fontSize: 14),
               headline4: TextStyle(
-                  fontFamily: defaultFontFamily,
+                  fontFamily: FontFamily.avenir,
                   fontSize: 24,
                   color: primaryTextColor,
                   fontWeight: FontWeight.w700),
               caption: TextStyle(
-                  fontFamily: defaultFontFamily,
+                  fontFamily: FontFamily.avenir,
                   fontWeight: FontWeight.w700,
                   color: Color(0xff7B8BB2),
                   fontSize: 10)),
@@ -67,7 +67,7 @@ class MyApp extends StatelessWidget {
                       fontSize: 18,
                       color: primaryColor,
                       fontWeight: FontWeight.w400,
-                      fontFamily: defaultFontFamily))))),
+                      fontFamily: FontFamily.avenir))))),
       home: Stack(
         children: const [
           Positioned.fill(child: HomeScreen()),
